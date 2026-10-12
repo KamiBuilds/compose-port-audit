@@ -1,0 +1,27 @@
+{
+  "name": "compose-port-audit",
+  "version": "1.0.0",
+  "description": "Statically audit Docker Compose port mappings for conflicts and risky exposure.",
+  "type": "module",
+  "bin": {
+    "compose-port-audit": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/audit.js && node --check src/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "docker-compose",
+    "security",
+    "ports",
+    "cli",
+    "audit"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.8.1"
+  }
+}

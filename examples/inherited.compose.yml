@@ -1,0 +1,8 @@
+x-web-port: &web-port
+  ports:
+    - "8080:80"
+
+services:
+  web:
+    <<: *web-port
+    image: nginx:alpine
